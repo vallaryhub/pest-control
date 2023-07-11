@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86f1bb20ab.js" crossorigin="anonymous"></script>
+    <title>Pest Control</title>
+</head>
+<body>
+<header>
+<div class="navbar">
+<div class="logo"><a href="#">Samia Pest Control</a></div>
+<ul class="links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricin">Pricing</a></li>
+    <li><a href="#gallary">gallary</a></li>
+    <li><a href="#contact">contact</a></li>
+</ul>
+    <a href="#" class="action-btn"> Book Appointment</a>
+    <div class="toggle-btn">
+        <i class="fa-solid fa-bars" style="color: #1f512e;"></i>
+    </div>
+
+    <div class="dropdown-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricin">Pricing</a></li>
+    <li><a href="#gallary">gallary</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="#" class="action-btn"> Book Appointment</a></li>
+    </div>
+
+
+</div>
+</header>
+
+<main>
+    <section id="hero">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+         Placeat voluptatum consequatur quia totam ipsum error beatae veritatis ad labore explicabo <br>
+        nobis quod sequi, Accusantium mollitia quam tenetur totam.</p>
+
+    </section>
+</main>
+<script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const togglebBtnIcon = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBtn.onclick = function(params) {
+        dropDownMenu.classList.toggle('open')
+        const isOpen =dropDownMenu.classList.contains('open')
+
+        togglebBtnIcon.classList =isOpen
+        ?'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+    }
+</script>
+</body>
+</html>
