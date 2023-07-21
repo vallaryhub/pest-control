@@ -5,10 +5,10 @@
     font-family: 'Open Sans',sans-serif;
 }
 
+
 body {
     height: 100vh;
-    background-color: #070006;
-    background-image: url();
+    background-image: url(images/5.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -55,12 +55,12 @@ header{
 }
 
 .action-btn {
-    background-color: aquamarine;
+    background-color: #015b0f;
     color: #010a02;
     padding:  0.5rem;
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 20px   0 22px 32px;
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
@@ -84,7 +84,7 @@ header{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(3, 160, 163, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -111,22 +111,149 @@ header{
     justify-content: center;
 }
 
-/*hero*/
-section#hero{
-    height: calc(100vh = 60px);
+
+.container{
+    background-color: #000;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    margin:auto;
+
+}
+
+  .container h1 {
+    font-size: 35px;
+    line-height: 40px;
     color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-family: 'Abril Fatface', cursive;
 }
 
-#hero h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.container .text {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #c0bdbd;
+    
 }
 
+.btn-style-one {
+    background-color: #015b0f;
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    padding: 20px 15px;
+    margin-top: 40px;
+    font-weight: 600;
+    border-radius: 20px 0 22px 32px;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    vertical-align: middle;
+    box-shadow: 0px 15px 40px 0px rgba(11, 0, 10, 0.2);
+}
+
+.btn-style-one:hover{
+    scale: 1.05;
+    color: #fff;
+
+}
+
+
+.container img {
+    height: 450px;
+    align-items: center; 
+  }
+
+
+
+  .section{
+    background-color: #c0bdbd;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    margin:10 auto 0 auto;
+    
+
+}
+
+  .section h3{
+    margin: 0;
+    font-size: 35px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-family: Open Sans',sans-serif';
+}
+
+.section .p {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #c0bdbd;
+    margin-right: 15px;
+    
+}
+
+.section img {
+    height: 350px;
+    border-radius: 5px; 
+  }
+
+
+
+
+  #Services{
+    padding: 10px 0;
+    }
+    .Services-list{
+        display: flex;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-gap :40px;
+        margin-top: 50px;
+    }
+    
+    .Services-list div{
+        background: #ee2ec8a2;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 300;
+        border-radius: 10px;
+        transition: background 0.5s, transform 0.5s;
+    }
+    .Services-list div i {
+        font-size: 40px;
+        margin-bottom: 30px;
+        border-radius: 20px 0 22px 32px;
+    }
+    .Services-list div h2{
+        font-size: 27px;
+        font-weight: 450;
+        margin-bottom: 20px;
+        color: rgb(89, 0, 255);
+    }
+    .Services-list div a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        margin-top: 20px;
+        display: inline-block;
+        
+    }
+    .Services-list div:hover{
+        background: #dd0549a2;
+        transform: translateY(-10px);
+    }
+  
+  
 
 
 /*responsive design*/
